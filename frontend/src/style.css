@@ -1,0 +1,86 @@
+.metrophobic-regular {
+    font-family: "Metrophobic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: rgba(122, 159, 134, 0.5);
+}
+
+#chat-container {
+    padding: 20px;
+    border: 1px solid rgba(122, 159, 134, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    border-radius: 2%;
+}
+
+#chat-box {
+    padding: 10px;
+    border: 1px solid rgba(122, 159, 134, 0.5);
+    height: 600px;
+    width: 100%;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    background-color: rgba(122, 159, 134, 0.5);
+    border-radius: 2%;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+}
+
+#chat-box::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+#messages {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+}
+
+#user-input {
+    padding: 10px;
+    border: 1px solid rgba(122, 159, 134, 0.5);
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    background-color: rgba(122, 159, 134, 0.5);
+    border-radius: 2%;
+    font-size: 14px;
+}
+
+#send-btn {
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    background-color: #333;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5%;
+}
+
+@keyframes fadeBackground {
+    0% {
+        background-color: rgba(122, 159, 134, 0.5); /* Green */
+        background-color: transparent;
+    }
+    50% {
+        background-color: #7b94aa
+    }
+    100% {
+        background-color: rgba(122, 159, 134, 0.5); /* Green */
+        background-color: transparent;
+    }
+}
+
+.fade-effect {
+    animation: fadeBackground 10s;
+}
+
